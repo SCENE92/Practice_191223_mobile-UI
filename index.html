@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet "href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <title>Practice_191223_mobile-UI</title>
+  </head>
+  <body>
+    <div class="display_outline">
+        <div class="display_bezel">
+            <div class="display_inline">
+                <!--background_photop-->
+                <img src="photo.png" alt="" id="background-photo_img">
+                <!--header-->
+                <header>
+                    <!--header-nav-top-->
+                    <div class="header-nav-top_container">
+                        <div class="header-nav-top-left_box">
+                            <span class="clock">5:11 AM</span>
+                        </div>
+                        <div class="header-nav-top-right_box">
+                            <i class="fa fa-signal" aria-hidden="true"></i>
+                            <i class="fa fa-wifi"></i>
+                            <i class="fa fa-battery-full" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                    <!--header-nav-center-->
+                    <div class="header-nav-center_container">
+                        <div class="header-nav-center-left_box">
+                            <i class="fa fa-chevron-left" id="go"></i>
+                        </div>
+                        <div class="header-nav-center-right_box">
+                            <i class="fa fa-cart-plus" aria-hidden="true" id="go"></i>
+                            <img src="profile.png" alt="" class="profile">                            
+                        </div>
+                    </div>
+
+                    <!--header-nav-bottom-->
+                    <div class="header-nav-bottom_container">
+                        <button class="header-nav-bottom_item" id="product_btn">Product</button>
+                        <button class="header-nav-bottom_item" id="detail_btn">Detail</button>
+                        <button class="header-nav-bottom_item" id="review_btn">Review</button>
+                    </div>
+                </header>
+
+                <!-----main----->
+                <main>
+                    <div class="main_container">
+                        <div class="main-a">
+                            <div class="main-a-left_box">
+                                <div class="main-a-title_box">
+                                    <span class="main-a-title">ONE OK ROCK: Taking Off</span>
+                                    <span class="main-a-subtitle">[OFFICIAL VIDEO]</span>
+                                </div>
+                                <div class="price_item">
+                                    <span class="price-19_item">$19.64</span>
+                                    <span class="price-29_item">$29.64</span>
+                                </div>
+                            </div>
+                            <div class="main-a-right_box">
+                                <button class="main-a-point_btn">4.3<i class="fa fa-star-o" aria-hidden="true"></i></button>
+                                <span class="main-right_span">130 Sales</span>
+                            </div>
+                        </div>
+                        <div class="main-b">
+                            <div class="main-b-left_box">
+                                <div class="main-b-title_box">
+                                    <span class="main-b-title">Select Color</span>
+                                </div>
+                                <div class="main-b-color_box">
+                                    <input type="checkbox" class="color_cb" id="cb1">
+                                    <label for="cb1"></label>
+                                    <input type="checkbox" class="color_cb" id="cb2">
+                                    <label for="cb2"></label>
+                                    <input type="checkbox" class="color_cb" id="cb3">
+                                    <label for="cb3"></label>
+                                    <input type="checkbox" class="color_cb" id="cb4">
+                                    <label for="cb4"></label>
+                                    <input type="checkbox" class="color_cb" id="cb5">
+                                    <label for="cb5"></label>
+                                </div>
+                            </div>
+                            <div class="main-b-right_box">
+                                <button class="main-clearall_btn">Clear All</button>
+                            </div>
+                        </div>
+                        <div class="main-c">
+                            <div class="main-c-top_box">
+                                <div class="main-c-title">
+                                    <span>Select Size</span>
+                                </div>
+                                <button class="main-clearall_btn">Clear All</button>
+                            </div>
+                            <div class="main-c-bottom_box">
+                                <input type="checkbox" class="size_cb" id="size_cb1">
+                                <label for="size_cb1" class="size_label">XS</label>
+                                <input type="checkbox" class="size_cb" id="size_cb2">
+                                <label for="size_cb2" class="size_label">S</label>
+                                <input type="checkbox" class="size_cb" id="size_cb3">
+                                <label for="size_cb3" class="size_label">M</label>
+                                <input type="checkbox" class="size_cb" id="size_cb4">
+                                <label for="size_cb4" class="size_label">L</label>
+                                <input type="checkbox" class="size_cb" id="size_cb5">
+                                <label for="size_cb5" class="size_label">XL</label>
+                                <input type="checkbox" class="size_cb" id="size_cb6">
+                                <label for="size_cb6" class="size_label">XXL</label>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+                <!-----footer----->
+                <footer>
+                    <div class="footer-top_container">
+                        <div class="like_box">
+                            <button class="like_btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        </div>
+                        <div class="addtocart_box">
+                            <div class="addtocart_span_box">
+                                <span>Add to Cart</span>
+                            </div>
+                            <div class="addtocart-pm_btn_box">
+                                <button class="minus_btn" id="minus_btn"><i class="fa fa-minus-circle" aria-hidden="true"></i></button>
+                                <span id="countnumber_js">0</span>
+                                <button class="plus_btn" id="plus_btn"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom_container">
+                        <button class="phone_btn" id="phonebtn-left_btn"><i class="fa fa-chevron-left" aria-hidden="true"></i></i></button>
+                        <button class="phone_btn" id="phonebtn-center_btn"><i class="fa fa-circle" aria-hidden="true"></i></i></button>
+                        <button class="phone_btn" id="phonebtn-right_btn"><i class="fa fa-square" aria-hidden="true"></i></button>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
